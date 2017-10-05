@@ -13,4 +13,5 @@ Deploys
 -------
 
     nanoc
-    nanoc deploy
+
+Site generated into the docs folder and published into github pages.
