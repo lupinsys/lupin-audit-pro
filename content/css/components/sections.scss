@@ -1,0 +1,54 @@
+.section {
+  padding: 3em 4em 4em;
+  font-size: 19px;
+  font-size: 1rem;
+
+  p {
+    font-size: 1em;
+  }
+}
+
+.section--white {
+  background: $white;
+}
+
+.section__title {
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-size: em(30);
+
+  @include breakpoint-down(lg) {
+    font-size: em(20);
+  }
+}
+
+.section__title--special {
+  text-align: left;
+  position: relative;
+  margin: 0;
+  margin-bottom: 2.5em;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    margin-top: 20px;
+    display: block;
+    left: 0;
+    height: 2px;
+    width: 117px;
+    background: $navy;
+  }
+}
+
+.section--logos {
+  background: #fff;
+  text-align: center;
+  padding: 0;
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}

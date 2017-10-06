@@ -1,0 +1,12 @@
+html {
+  font-size: 100%;
+
+  @include breakpoint-up(xl) {
+    font-size: 118.8%;
+  }
+}
+
+body {
+  font-family: "Open Sans", Helvetica, Arial, Verdana, sans-serif;
+  color: $black;
+}

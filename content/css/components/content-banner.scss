@@ -1,0 +1,29 @@
+.content-banner {
+  .banner__title {
+    font-size: em(40.35) !important;
+    margin: 0 0 0.65em !important;
+
+    @include breakpoint-down(md) {
+      font-size: em(32) !important;
+    }
+  }
+
+  .banner__cta {
+    margin-top: 10px;
+  }
+}
+
+.content-banner__image {
+  background-color: $navy;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.content-banner__banner {
+  background-color: $navy;
+  color: $white;
+  font-size: 1rem;
+  padding: 5em 4em 4em 5em;
+  min-height: 22em;
+}

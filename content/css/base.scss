@@ -1,0 +1,27 @@
+* {
+ box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  background: $light-grey;
+}
+
+.webpage-limit {
+  max-width: 1320px;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0,0,0, .4);
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100% !important;
+}
+
+
+p + p {
+  margin-top: 30px;
+}

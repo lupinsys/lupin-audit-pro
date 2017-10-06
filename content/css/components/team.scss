@@ -1,0 +1,31 @@
+.team-container {
+  position: relative;
+  top: -2em;
+  margin-top: 3.5em;
+  margin-bottom: -3em;
+}
+
+.team-member {
+  display: block;
+  padding-top: 2em !important;
+  text-align: center;
+}
+
+.team-member__name {
+  font-weight: 600;
+  color: $black;
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+.team-member__role {
+  color: #2D7AC9;
+  margin-bottom: 1.5em;
+  font-size: 1em;
+}
+
+.team-member__bio {
+  color: #9B9B9B;
+  max-width: 250px;
+  margin: 0 auto;
+}

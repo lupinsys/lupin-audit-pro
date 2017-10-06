@@ -1,0 +1,46 @@
+.footer {
+  background: #131B3A;
+  display: table;
+  width: 100%;
+  font-size: 19px;
+  font-size: 1rem;
+  color: $white;
+}
+
+.footer__first,
+.footer__second,
+.footer__third {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 1.5em 2em 1em;
+
+  @include breakpoint-down(sm) {
+    display: block;
+  }
+}
+
+.footer__first {
+  text-align: left;
+  width: 300px;
+
+  @include breakpoint-down(sm) {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.footer__second {
+  text-align: center;
+  font-size: 16px;
+}
+
+.footer__third {
+  width: 350px;
+  text-align: left;
+  font-size: 16px;
+
+  @include breakpoint-down(sm) {
+    text-align: center;
+    width: 100%;
+  }
+}

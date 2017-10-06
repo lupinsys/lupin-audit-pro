@@ -1,0 +1,32 @@
+$ups: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$downs: (
+  xs: 575px,
+  sm: 767px,
+  md: 991px,
+  lg: 1199px
+);
+
+@mixin breakpoint-up($b) {
+  @media (min-width: map-get($ups, $b)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($b) {
+  @media (max-width: map-get($downs, $b)) {
+    @content;
+  }
+}
+
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}

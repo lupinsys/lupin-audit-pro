@@ -1,0 +1,31 @@
+.btn {
+  font-size: 1em;
+  border-radius: 0 !important;
+}
+
+.btn-primary {
+  border-radius: 0 !important;
+  box-shadow: 0 0 10px rgba(0,0,0, .5);
+  background: #2D7AC9 !important;
+  border-color: #2D7AC9 !important;
+
+  &:hover,
+  &:focus {
+    background: darken(#2D7AC9, 10%) !important;
+    border-color: darken(#2D7AC9, 10%) !important;
+  }
+}
+
+.btn-outline-light {
+  color: $white;
+  border: 1px solid $white;
+  background: transparent;
+  padding: 0.6em 1.2em;
+  transition: all 120ms ease-out;
+
+  &:hover,
+  &:focus {
+    background: $white;
+    color: $black;
+  }
+}
