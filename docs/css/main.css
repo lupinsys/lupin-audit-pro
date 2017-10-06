@@ -108,7 +108,10 @@ body {
   border-radius: 0 !important;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background: #2D7AC9 !important;
-  border-color: #2D7AC9 !important; }
+  border-color: #2D7AC9 !important;
+  font-weight: 600;
+  font-size: 1em;
+  padding: 0.8em 1.5em !important; }
   .btn-primary:hover, .btn-primary:focus {
     background: #24619f !important;
     border-color: #24619f !important; }
@@ -122,6 +125,44 @@ body {
   .btn-outline-light:hover, .btn-outline-light:focus {
     background: #fff;
     color: #222; }
+
+.contact-form {
+  padding-right: 60px;
+  margin-top: 8px; }
+  @media (max-width: 991px) {
+    .contact-form {
+      padding-right: 0; } }
+  .contact-form .form-control {
+    border: none !important;
+    border-bottom: 1px solid #4A4A4A !important;
+    font-size: 1em;
+    padding: 0.2em 0 1.2em;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    resize: none;
+    color: #4A4A4A !important; }
+  .contact-form .form-group {
+    margin-bottom: 20px; }
+    .contact-form .form-group + .form-group {
+      margin-top: 30px; }
+  .contact-form .form-actions {
+    padding-top: 10px; }
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #4A4A4A !important; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #4A4A4A !important; }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #4A4A4A !important; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #4A4A4A !important; }
 
 .content-banner .banner__title {
   font-size: 2.521875em !important;
@@ -328,12 +369,19 @@ body {
 .team-member__role {
   color: #2D7AC9;
   margin-bottom: 1.5em;
-  font-size: 1em; }
+  font-size: 1em;
+  font-weight: 600; }
 
 .team-member__bio {
   color: #9B9B9B;
   max-width: 250px;
   margin: 0 auto; }
+
+.contact-title {
+  font-weight: 600;
+  margin-bottom: 0; }
+  .contact-title + p {
+    margin-top: 10px; }
 
 .question {
   font-size: 1rem;

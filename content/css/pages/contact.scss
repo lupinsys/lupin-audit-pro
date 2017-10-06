@@ -1,0 +1,8 @@
+.contact-title {
+  font-weight: 600;
+  margin-bottom: 0;
+
+  & + p {
+    margin-top: 10px;
+  }
+}
