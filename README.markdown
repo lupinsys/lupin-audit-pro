@@ -14,4 +14,5 @@ Deploys
 
     nanoc
 
-Site generated into the docs folder and published into github pages.
+Site generated into the docs folder and published to heroku using https://github.com/heroku/heroku-buildpack-static
+Need to commit the generated code
