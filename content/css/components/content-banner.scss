@@ -26,4 +26,13 @@
   font-size: 1rem;
   padding: 5em 4em 4em 5em;
   min-height: 22em;
+
+  @include breakpoint-down(md) {
+    min-height: 20em;
+  }
+
+  @include breakpoint-down(sm) {
+    padding: 2em 1em;
+    min-height: none;
+  }
 }

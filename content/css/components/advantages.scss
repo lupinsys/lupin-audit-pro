@@ -13,8 +13,13 @@
 
 .advantage__icon {
   margin-bottom: 20px;
+  min-height: 40px;
 }
 
 .advantage__title {
   font-weight: 600;
+}
+
+.advantage__text {
+  margin-top: 10px !important;
 }

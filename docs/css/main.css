@@ -42,10 +42,14 @@ body {
   margin-bottom: 2em; }
 
 .advantage__icon {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  min-height: 40px; }
 
 .advantage__title {
   font-weight: 600; }
+
+.advantage__text {
+  margin-top: 10px !important; }
 
 .banner__title {
   font-size: 3.95em;
@@ -56,6 +60,9 @@ body {
   @media (max-width: 991px) {
     .banner__title {
       font-size: 2.8125em; } }
+  @media (max-width: 767px) {
+    .banner__title {
+      font-size: 2.1875em; } }
 
 .banner {
   font-size: 19px;
@@ -70,6 +77,9 @@ body {
   @media (max-width: 991px) {
     .banner__text {
       font-size: 1.375em; } }
+  @media (max-width: 767px) {
+    .banner__text {
+      font-size: 1.1875em; } }
 
 .banner__cta {
   font-weight: 600;
@@ -111,7 +121,8 @@ body {
   border-color: #2D7AC9 !important;
   font-weight: 600;
   font-size: 1em;
-  padding: 0.8em 1.5em !important; }
+  padding: 0.8em 1.5em !important;
+  white-space: inherit; }
   .btn-primary:hover, .btn-primary:focus {
     background: #24619f !important;
     border-color: #24619f !important; }
@@ -185,6 +196,13 @@ body {
   font-size: 1rem;
   padding: 5em 4em 4em 5em;
   min-height: 22em; }
+  @media (max-width: 991px) {
+    .content-banner__banner {
+      min-height: 20em; } }
+  @media (max-width: 767px) {
+    .content-banner__banner {
+      padding: 2em 1em;
+      min-height: none; } }
 
 .footer {
   background: #131B3A;
@@ -226,6 +244,9 @@ body {
     .footer__third {
       text-align: center;
       width: 100%; } }
+  .footer__third img {
+    max-width: 100%;
+    display: block; }
 
 .navbar {
   background: #fff !important;
@@ -233,8 +254,8 @@ body {
   border: none !important; }
 
 .navbar li a {
-  border-bottom: 3px solid transparent;
-  padding-top: 1em;
+  border-bottom: 4px solid transparent;
+  padding-top: 1.1em;
   padding-bottom: 1em;
   color: #222 !important; }
 
@@ -246,6 +267,11 @@ body {
 .navbar-nav {
   font-size: 19px;
   font-size: 1rem; }
+
+.navbar-toggle {
+  border: none !important;
+  border-radius: 0 !important;
+  margin-top: 14px !important; }
 
 .navbar-brand {
   background: url("/images/logo.jpg");
@@ -277,10 +303,16 @@ body {
   margin-top: 0; }
   @media (max-width: 991px) {
     .hero__title {
-      font-size: 3.75em; } }
+      font-size: 2.5em; } }
+  @media (max-width: 767px) {
+    .hero__title {
+      font-size: 2.1875em; } }
 
 .hero--banner {
   padding: 14em 0 6em; }
+  @media (max-width: 767px) {
+    .hero--banner {
+      padding-bottom: 0; } }
   .hero--banner .hero__title {
     margin-bottom: 20px;
     margin-top: 20px; }
@@ -294,7 +326,8 @@ body {
   font-size: 1rem; }
   @media (max-width: 991px) {
     .hero__banner {
-      padding-left: 20px; } }
+      padding-left: 20px;
+      padding-right: 20px; } }
 
 .hero--home {
   background-image: url("../images/hero_image.jpg");
@@ -310,6 +343,9 @@ body {
   padding: 3em 4em 4em;
   font-size: 19px;
   font-size: 1rem; }
+  @media (max-width: 767px) {
+    .section {
+      padding: 2em 0; } }
   .section p {
     font-size: 1em; }
 
