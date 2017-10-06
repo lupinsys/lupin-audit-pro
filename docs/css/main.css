@@ -57,6 +57,9 @@ body {
   font-weight: 400;
   line-height: 1.2;
   margin: 0 0 0.45em; }
+  @media (max-width: 1199px) {
+    .banner__title {
+      font-size: 3.4375em; } }
   @media (max-width: 991px) {
     .banner__title {
       font-size: 2.8125em; } }
@@ -176,7 +179,7 @@ body {
   color: #4A4A4A !important; }
 
 .content-banner .banner__title {
-  font-size: 2.52188em !important;
+  font-size: 2.521875em !important;
   margin: 0 0 0.65em !important; }
   @media (max-width: 991px) {
     .content-banner .banner__title {
@@ -301,6 +304,9 @@ body {
   line-height: 1.2;
   margin-bottom: 0;
   margin-top: 0; }
+  @media (max-width: 1199px) {
+    .hero__title {
+      font-size: 3.4375em; } }
   @media (max-width: 991px) {
     .hero__title {
       font-size: 2.5em; } }
@@ -428,6 +434,11 @@ body {
       min-height: 0; } }
   .question + .question {
     margin-top: 3em; }
+
+.question__title {
+  font-weight: bold; }
+  .question__title + p {
+    margin-top: 0; }
 
 @media (max-width: 991px) {
   .question.first {

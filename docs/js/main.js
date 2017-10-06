@@ -62,5 +62,3 @@ ready(function domReady() {
     matchHeight();
   });
 });
-
-console.log("lol");

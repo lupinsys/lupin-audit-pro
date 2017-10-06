@@ -12,6 +12,14 @@
   }
 }
 
+.question__title {
+  font-weight: bold;
+
+  & + p {
+    margin-top: 0;
+  }
+}
+
 .question.first {
   @include breakpoint-down(md) {
     margin-top: 3em;

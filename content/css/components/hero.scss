@@ -17,6 +17,10 @@
   margin-bottom: 0;
   margin-top: 0;
 
+  @include breakpoint-down(lg) {
+    font-size: em(55);
+  }
+
   @include breakpoint-down(md) {
     font-size: em(40);
   }

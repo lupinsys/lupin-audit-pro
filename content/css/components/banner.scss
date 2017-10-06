@@ -5,6 +5,10 @@
   line-height: 1.2;
   margin: 0 0 0.45em;
 
+  @include breakpoint-down(lg) {
+    font-size: em(55);
+  }
+
   @include breakpoint-down(md) {
     font-size: em(45);
   }
