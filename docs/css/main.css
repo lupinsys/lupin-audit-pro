@@ -207,7 +207,7 @@ body {
   @media (max-width: 767px) {
     .content-banner__banner {
       padding: 2em 1em;
-      min-height: none; } }
+      min-height: 0; } }
 
 .footer {
   background: #131B3A;

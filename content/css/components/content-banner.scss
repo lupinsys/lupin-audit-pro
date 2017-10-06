@@ -33,6 +33,6 @@
 
   @include breakpoint-down(sm) {
     padding: 2em 1em;
-    min-height: none;
+    min-height: 0;
   }
 }
