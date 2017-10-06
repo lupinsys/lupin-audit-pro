@@ -275,6 +275,8 @@ body {
   border: none !important;
   border-radius: 0 !important;
   margin-top: 14px !important; }
+  .navbar-toggle:hover, .navbar-toggle:focus {
+    background: transparent !important; }
 
 .navbar-brand {
   background: url("/images/logo.jpg");

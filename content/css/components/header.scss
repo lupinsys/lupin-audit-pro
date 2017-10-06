@@ -26,6 +26,11 @@
   border: none !important;
   border-radius: 0 !important;
   margin-top: 14px !important;
+
+  &:hover,
+  &:focus {
+    background: transparent !important;
+  }
 }
 
 .navbar-brand {
