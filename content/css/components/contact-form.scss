@@ -37,6 +37,7 @@
   padding: 30px;
   background: #f3f3f3;
   margin-bottom: 20px;
+  margin-right: 60px;
 
   p + p {
     margin-top: 15px;
@@ -44,6 +45,7 @@
 
   @include breakpoint-down(md) {
     height: 220px;
+    margin-right: 0;
   }
 }
 
