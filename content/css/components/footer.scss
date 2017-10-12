@@ -1,10 +1,13 @@
 .footer {
   background: #131B3A;
-  display: table;
-  width: 100%;
   font-size: 19px;
   font-size: 1rem;
   color: $white;
+
+  > .container {
+    display: table;
+    width: 100%;
+  }
 }
 
 .footer__first,
@@ -21,7 +24,8 @@
 
 .footer__first {
   text-align: left;
-  width: 300px;
+  width: 1px;
+  padding-left: 0;
 
   @include breakpoint-down(sm) {
     text-align: center;
@@ -35,18 +39,23 @@
 }
 
 .footer__third {
-  width: 350px;
+  width: 302px;
   text-align: left;
   font-size: 16px;
+  padding-right: 0;
 
   @include breakpoint-down(sm) {
     text-align: center;
     width: 100%;
+
+    img {
+      display: block;
+      margin: 0 auto !important;
+    }
   }
 
   img {
     max-width: 100%;
-    display: block;
-    margin: 0 auto !important;
   }
+
 }

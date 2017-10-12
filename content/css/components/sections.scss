@@ -1,5 +1,5 @@
 .section {
-  padding: 3em 4em 4em;
+  padding: 3em 4em 3em;
   font-size: 19px;
   font-size: 1rem;
 
@@ -12,19 +12,29 @@
   }
 }
 
+.section--benefits {
+  padding-bottom: 0.5em;
+}
+
 .section--white {
   background: $white;
 }
 
 .section__title {
   text-align: center;
-  margin: 0 auto;
-  line-height: 1.5;
+  margin: 0.1em auto;
+  line-height: 1.4;
   font-size: em(30);
+  max-width: 1200px;
+  letter-spacing: 0.2px;
 
   @include breakpoint-down(lg) {
     font-size: em(20);
   }
+}
+
+.section__title--subhero {
+  margin: 0.8em auto;
 }
 
 .section__title--special {

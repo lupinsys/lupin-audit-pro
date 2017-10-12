@@ -6,19 +6,20 @@
 html, body {
   background: #eeeeee; }
 
-.webpage-limit {
-  max-width: 1320px;
-  margin: 0 auto;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); }
-
 .container {
-  max-width: 1240px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
   width: 100% !important; }
 
 p + p {
   margin-top: 30px; }
+
+.backgrounded {
+  background: #E9EBF1; }
+  .backgrounded > .container {
+    max-width: 1440px;
+    padding: 0; }
 
 html {
   font-size: 100%; }
@@ -31,7 +32,8 @@ body {
   color: #222; }
 
 .advantages {
-  margin-top: 2em;
+  margin-top: 2.3em;
+  margin-bottom: 1.7em;
   position: relative;
   top: 2em; }
 
@@ -42,21 +44,25 @@ body {
   margin-bottom: 2em; }
 
 .advantage__icon {
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   min-height: 40px; }
+  .advantage__icon img {
+    vertical-align: bottom;
+    vertical-align: -webkit-baseline-middle; }
 
 .advantage__title {
   font-weight: 600; }
 
 .advantage__text {
-  margin-top: 10px !important; }
+  margin-top: 15px !important; }
 
 .banner__title {
   font-size: 3.95em;
   color: #fff;
   font-weight: 400;
   line-height: 1.2;
-  margin: 0 0 0.45em; }
+  margin: 0 0 0.32em;
+  letter-spacing: -0.2px; }
   @media (max-width: 1199px) {
     .banner__title {
       font-size: 3.4375em; } }
@@ -76,7 +82,8 @@ body {
 
 .banner__text {
   font-size: 1.875em;
-  margin-bottom: 1em; }
+  margin-bottom: 0.8em;
+  letter-spacing: 0.1px; }
   @media (max-width: 991px) {
     .banner__text {
       font-size: 1.375em; } }
@@ -86,8 +93,7 @@ body {
 
 .banner__cta {
   font-weight: 600;
-  font-size: 1em;
-  padding: 0.8em 1.5em !important; }
+  font-size: 1em; }
 
 .benefits {
   position: relative;
@@ -99,8 +105,11 @@ body {
   position: relative;
   font-size: 1rem;
   color: #4a4a4a;
-  margin-top: 2em;
-  min-height: 8em; }
+  margin-top: 1.7em;
+  min-height: 5em; }
+  @media (max-width: 1199px) {
+    .benefit {
+      min-height: 9em; } }
   @media (max-width: 767px) {
     .benefit {
       min-height: 0; } }
@@ -124,8 +133,9 @@ body {
   border-color: #2D7AC9 !important;
   font-weight: 600;
   font-size: 1em;
-  padding: 0.8em 1.5em !important;
-  white-space: inherit; }
+  padding: 0.7em 1.1em !important;
+  white-space: inherit;
+  letter-spacing: 0.25px; }
   .btn-primary:hover, .btn-primary:focus {
     background: #24619f !important;
     border-color: #24619f !important; }
@@ -195,12 +205,15 @@ body {
 
 .content-banner .banner__title {
   font-size: 2.521875em !important;
-  margin: 0 0 0.65em !important; }
+  margin: 0 0 0.45em !important;
+  letter-spacing: 0 !important; }
   @media (max-width: 991px) {
     .content-banner .banner__title {
       font-size: 2em !important; } }
 .content-banner .banner__cta {
-  margin-top: 10px; }
+  margin-top: 14px;
+  padding: 0.7em 0.7em !important;
+  letter-spacing: 0.28px; }
 
 .content-banner__image {
   background-color: #273776;
@@ -212,7 +225,7 @@ body {
   background-color: #273776;
   color: #fff;
   font-size: 1rem;
-  padding: 5em 4em 4em 5em;
+  padding: 5.5em 4em 4em 5.2em;
   min-height: 22em; }
   @media (max-width: 991px) {
     .content-banner__banner {
@@ -224,11 +237,12 @@ body {
 
 .footer {
   background: #131B3A;
-  display: table;
-  width: 100%;
   font-size: 19px;
   font-size: 1rem;
   color: #fff; }
+  .footer > .container {
+    display: table;
+    width: 100%; }
 
 .footer__first,
 .footer__second,
@@ -244,7 +258,8 @@ body {
 
 .footer__first {
   text-align: left;
-  width: 300px; }
+  width: 1px;
+  padding-left: 0; }
   @media (max-width: 767px) {
     .footer__first {
       text-align: center;
@@ -255,17 +270,19 @@ body {
   font-size: 16px; }
 
 .footer__third {
-  width: 350px;
+  width: 302px;
   text-align: left;
-  font-size: 16px; }
+  font-size: 16px;
+  padding-right: 0; }
   @media (max-width: 767px) {
     .footer__third {
       text-align: center;
-      width: 100%; } }
+      width: 100%; }
+      .footer__third img {
+        display: block;
+        margin: 0 auto !important; } }
   .footer__third img {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto !important; }
+    max-width: 100%; }
 
 .navbar {
   background: #fff !important;
@@ -333,7 +350,10 @@ body {
       font-size: 2.1875em; } }
 
 .hero--banner {
-  padding: 14em 0 6em; }
+  padding: 14em 0 10em; }
+  @media (max-width: 1400px) {
+    .hero--banner {
+      padding: 24em 0 0; } }
   @media (max-width: 767px) {
     .hero--banner {
       padding-bottom: 0; } }
@@ -342,8 +362,8 @@ body {
     margin-top: 20px; }
 
 .hero__banner {
-  max-width: 1026px;
-  padding: 2em 0em 3em 70px;
+  max-width: 1040px;
+  padding: 0.7em 0em 1.7em 100px;
   background: rgba(39, 55, 118, 0.85);
   color: #fff;
   font-size: 19px;
@@ -352,6 +372,10 @@ body {
     .hero__banner {
       padding-left: 20px;
       padding-right: 20px; } }
+
+.hero__banner-inner {
+  max-width: 910px;
+  display: inline-block; }
 
 .hero--home {
   background-image: url("../images/hero_image.jpg");
@@ -364,7 +388,7 @@ body {
   background-image: url("../images/contact_image.jpg"); }
 
 .section {
-  padding: 3em 4em 4em;
+  padding: 3em 4em 3em;
   font-size: 19px;
   font-size: 1rem; }
   @media (max-width: 767px) {
@@ -373,17 +397,25 @@ body {
   .section p {
     font-size: 1em; }
 
+.section--benefits {
+  padding-bottom: 0.5em; }
+
 .section--white {
   background: #fff; }
 
 .section__title {
   text-align: center;
-  margin: 0 auto;
-  line-height: 1.5;
-  font-size: 1.875em; }
+  margin: 0.1em auto;
+  line-height: 1.4;
+  font-size: 1.875em;
+  max-width: 1200px;
+  letter-spacing: 0.2px; }
   @media (max-width: 1199px) {
     .section__title {
       font-size: 1.25em; } }
+
+.section__title--subhero {
+  margin: 0.8em auto; }
 
 .section__title--special {
   text-align: left;
@@ -446,12 +478,19 @@ body {
 .question {
   font-size: 1rem;
   padding-right: 30px;
-  min-height: 8em; }
+  min-height: 6em; }
   @media (max-width: 991px) {
     .question {
       min-height: 0; } }
-  .question + .question {
-    margin-top: 3em; }
+  @media (max-width: 767px) {
+    .question {
+      margin-top: 1.1em;
+      margin-bottom: 1.1em; } }
+  .question.question.middle {
+    margin-top: 1.8em;
+    margin-bottom: 1.8em; }
+  .question p {
+    line-height: 1.3; }
 
 .question__title {
   font-weight: bold; }

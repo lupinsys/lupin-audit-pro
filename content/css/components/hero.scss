@@ -31,7 +31,11 @@
 }
 
 .hero--banner {
-  padding: 14em 0 6em;
+  padding: 14em 0 10em;
+
+  @media (max-width: 1400px) {
+    padding: 24em 0 0;
+  }
 
   @include breakpoint-down(sm) {
     padding-bottom: 0;
@@ -44,8 +48,8 @@
 }
 
 .hero__banner {
-  max-width: 1026px;
-  padding: 2em 0em 3em 70px;
+  max-width: 1040px;
+  padding: 0.7em 0em 1.7em 100px;
   background: rgba(#273776, .85);
   color: #fff;
   font-size: 19px;
@@ -55,6 +59,11 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+
+.hero__banner-inner {
+  max-width: 910px;
+  display: inline-block;
 }
 
 .hero--home {

@@ -3,7 +3,8 @@
   color: #fff;
   font-weight: 400;
   line-height: 1.2;
-  margin: 0 0 0.45em;
+  margin: 0 0 0.32em;
+  letter-spacing: -0.2px;
 
   @include breakpoint-down(lg) {
     font-size: em(55);
@@ -29,7 +30,8 @@
 
 .banner__text {
   font-size: em(30);
-  margin-bottom: 1em;
+  margin-bottom: 0.8em;
+  letter-spacing: 0.1px;
 
   @include breakpoint-down(md) {
     font-size: em(22);
@@ -43,5 +45,4 @@
 .banner__cta {
   font-weight: 600;
   font-size: 1em;
-  padding: 0.8em 1.5em !important;
 }

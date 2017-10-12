@@ -1,14 +1,24 @@
 .question {
   font-size: 1rem;
   padding-right: 30px;
-  min-height: 8em;
+  min-height: 6em;
 
   @include breakpoint-down(md) {
     min-height: 0;
   }
 
-  & + .question {
-    margin-top: 3em;
+  @include breakpoint-down(sm) {
+    margin-top: 1.1em;
+    margin-bottom: 1.1em;
+  }
+
+  &.question.middle {
+    margin-top: 1.8em;
+    margin-bottom: 1.8em;
+  }
+
+  p {
+    line-height: 1.3;
   }
 }
 

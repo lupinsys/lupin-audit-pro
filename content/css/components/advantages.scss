@@ -1,5 +1,6 @@
 .advantages {
-  margin-top: 2em;
+  margin-top: 2.3em;
+  margin-bottom: 1.7em;
   position: relative;
   top: 2em;
 }
@@ -12,8 +13,13 @@
 }
 
 .advantage__icon {
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   min-height: 40px;
+
+  img {
+    vertical-align: bottom;
+    vertical-align: -webkit-baseline-middle;
+  }
 }
 
 .advantage__title {
@@ -21,5 +27,5 @@
 }
 
 .advantage__text {
-  margin-top: 10px !important;
+  margin-top: 15px !important;
 }
