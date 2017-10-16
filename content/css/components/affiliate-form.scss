@@ -1,4 +1,4 @@
-.contact-form {
+.affiliate-form {
   padding-right: 60px;
 
   @include breakpoint-down(md) {
@@ -17,15 +17,15 @@
     color: #444 !important;
   }
 
-  #name {
+  .name {
     max-width: 325px;
   }
 
-  #email {
+  .email {
     max-width: 420px;
   }
 
-  #telephone {
+  .telephone {
     max-width: 212px;
   }
 
@@ -34,12 +34,45 @@
     font-weight: normal;
   }
 
+  legend {
+    border: none;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    font-weight: 600;
+    font-size: 1em;
+    color: #000;
+  }
+
+  fieldset:first-child legend {
+    padding-top: 0;
+  }
+
   .form-group {
     margin-bottom: 20px;
   }
 
   .form-actions {
     padding-top: 10px;
+  }
+
+  .add-auditor,
+  .delete-auditor {
+    font-size: 1em;
+    font-weight: 600;
+    color: #000;
+    text-decoration: underline;
+    text-decoration-skip: ink;
+  }
+
+  .delete-auditor {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  .add-auditor {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: inline-block;
   }
 }
 

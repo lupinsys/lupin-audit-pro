@@ -9,6 +9,23 @@
   padding-top: 1.1em;
   padding-bottom: 1em;
   color: $black !important;
+
+  &.button {
+    border: 1px solid $navy !important;
+    padding: 5px 10px;
+    line-height: 1;
+    font-weight: bold;
+    margin: 0.9em;
+    border-radius: 1px;
+    display: inline-block !important;
+
+    &:focus,
+    &:hover,
+    &:active {
+      background: $navy;
+      color: #fff !important;
+    }
+  }
 }
 
 .navbar li.active a {
