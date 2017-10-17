@@ -11,18 +11,20 @@
   color: $black !important;
 
   &.button {
-    border: 1px solid $navy !important;
-    padding: 5px 10px;
+    border: 1px solid #2D7AC9 !important;
+    background: #2D7AC9 !important;
+    padding: 15px 20px;
     line-height: 1;
-    font-weight: bold;
-    margin: 0.9em;
-    border-radius: 1px;
+    font-weight: 600;
+    margin: 0.3em 0.9em 0;
+    border-radius: 0;
     display: inline-block !important;
+    color: #fff !important;
 
     &:focus,
     &:hover,
     &:active {
-      background: $navy;
+      background: darken(#2D7AC9, 10%) !important;
       color: #fff !important;
     }
   }

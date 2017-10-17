@@ -134,6 +134,66 @@ var AffiliateForm = {
   }
 };
 
+var Form = {
+  init: function() {
+    this.form = $("form");
+
+    if (this.form.length === 0) {
+      return;
+    }
+
+    this.onSuccess = this.onSuccess.bind(this);
+    this.onError = this.onError.bind(this);
+
+    this.bindEvents();
+  },
+  bindEvents: function() {
+    var self = this;
+
+    this.form.on("submit", function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      var form = $(this);
+      var button = form.find("button[type='submit']");
+
+      button.prop("disabled", true);
+      button.text("Please wait...");
+
+      var url = form.attr("action");
+      var data = form.serialize() + "&sender=ajax";
+
+      $.ajax({
+        url: url,
+        type: "POST",
+        data: data,
+        success: self.onSuccess,
+        error: self.onError
+      })
+    });
+  },
+  onSuccess: function() {
+    this.hideForm();
+
+    $(this.form.data("success-container")).removeClass("hidden");
+
+    if (this.form.hasClass("affiliate-form")) {
+      this.changeTitle();
+    }
+  },
+  onError: function() {
+    this.hideForm();
+
+    $(this.form.data("error-container")).removeClass("hidden");
+  },
+  hideForm: function() {
+    this.form.addClass("hidden");
+  },
+  changeTitle: function() {
+    $(".section__title--special").text("Your registration has been submitted.")
+  }
+};
+
 ready(function domReady() {
 
   matchHeight();
@@ -143,4 +203,5 @@ ready(function domReady() {
   });
 
   AffiliateForm.init();
+  Form.init();
 });
