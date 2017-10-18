@@ -4,7 +4,7 @@
   -moz-osx-font-smoothing: grayscale; }
 
 html, body {
-  background: #eeeeee; }
+  min-height: 100vh; }
 
 .container {
   max-width: 1280px;
@@ -20,6 +20,10 @@ p + p {
   .backgrounded > .container {
     max-width: 1440px;
     padding: 0; }
+
+.site-wrapper {
+  padding-bottom: 116px;
+  min-height: 100vh; }
 
 html {
   font-size: 100%; }
@@ -350,7 +354,8 @@ body {
   background: #131B3A;
   font-size: 19px;
   font-size: 1rem;
-  color: #fff; }
+  color: #fff;
+  margin-top: -116px; }
   .footer > .container {
     display: table;
     width: 100%; }
@@ -532,6 +537,9 @@ body {
 
 .section--white {
   background: #fff; }
+
+.section--grey {
+  background: #eeeeee; }
 
 .section__title {
   text-align: center;

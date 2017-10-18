@@ -80,7 +80,7 @@ var AffiliateForm = {
     });
   },
   gracefullyRemoveElement: function(el, callback) {
-    el.anima({opacity: 0}, 200, function() {
+    el.animate({opacity: 0}, 200, function() {
       $(this).slideUp(400, function() {
         $(this).remove();
         callback();
@@ -183,6 +183,10 @@ var Form = {
   },
   onError: function() {
     this.hideForm();
+
+    if (this.form.hasClass("affiliate-form")) {
+      $(".section__title--special").hide();
+    }
 
     $(this.form.data("error-container")).removeClass("hidden");
   },

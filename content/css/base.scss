@@ -5,7 +5,7 @@
 }
 
 html, body {
-  background: $light-grey;
+  min-height: 100vh;
 }
 
 .container {
@@ -27,4 +27,9 @@ p + p {
     max-width: 1440px;
     padding: 0;
   }
+}
+
+.site-wrapper {
+  padding-bottom: 116px;
+  min-height: 100vh;
 }
