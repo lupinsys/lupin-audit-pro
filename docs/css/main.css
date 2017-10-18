@@ -21,9 +21,10 @@ p + p {
     max-width: 1440px;
     padding: 0; }
 
-.site-wrapper {
-  padding-bottom: 116px;
-  min-height: 100vh; }
+@media (min-width: 768px) {
+  .site-wrapper {
+    padding-bottom: 116px;
+    min-height: 100vh; } }
 
 html {
   font-size: 100%; }
@@ -354,8 +355,10 @@ body {
   background: #131B3A;
   font-size: 19px;
   font-size: 1rem;
-  color: #fff;
-  margin-top: -116px; }
+  color: #fff; }
+  @media (min-width: 768px) {
+    .footer {
+      margin-top: -116px; } }
   .footer > .container {
     display: table;
     width: 100%; }

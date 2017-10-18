@@ -30,6 +30,8 @@ p + p {
 }
 
 .site-wrapper {
-  padding-bottom: 116px;
-  min-height: 100vh;
+  @media (min-width: 768px) {
+    padding-bottom: 116px;
+    min-height: 100vh;
+  }
 }

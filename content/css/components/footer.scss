@@ -3,7 +3,10 @@
   font-size: 19px;
   font-size: 1rem;
   color: $white;
-  margin-top: -116px;
+
+  @media (min-width: 768px) {
+    margin-top: -116px;
+  }
 
   > .container {
     display: table;
