@@ -167,6 +167,9 @@ var Form = {
         url: url,
         type: "POST",
         data: data,
+        headers: {
+          "X-Requested-With": "XMLHttpRequest"
+        },
         success: self.onSuccess,
         error: self.onError
       })
