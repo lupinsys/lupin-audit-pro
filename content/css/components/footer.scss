@@ -4,6 +4,10 @@
   font-size: 1rem;
   color: $white;
 
+  @media (min-width: 768px) {
+    margin-top: -116px;
+  }
+
   > .container {
     display: table;
     width: 100%;

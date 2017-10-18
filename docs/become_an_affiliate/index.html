@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Contact us - AuditPro</title>
+    <title>Become an affiliate - AuditPro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
@@ -48,7 +48,7 @@
               FAQs
             </a>
           </li>
-          <li class="active">
+          <li class="">
             <a href="/contact_us">
               Contact us
             </a>
@@ -66,55 +66,98 @@
 
 <div class="hero hero--contact">
   <h2 class="hero__title">
-    Contact us
+    Affiliate Registration
   </h2>
 </div>
 
 <div class="section">
   <div class="container">
     <h3 class="section__title section__title--special">
-      To request a demonstration or to find out more, please contact us.
+      To register as an AuditPro Affiliate, please submit the form below.
     </h3>
 
     <div class="contact-section">
       <div class="row">
         <div class="col-xs-12 col-md-6">
-          <form accept-charset="UTF-8" action="https://lupin-audit-pro-form.herokuapp.com/forms" method="post" class="contact-form" data-success-container="#contact-message-success" data-error-container="#contact-message-error">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input name="name" type="text" class="form-control" id="name" required>
+          <form accept-charset="UTF-8" action="https://lupin-audit-pro-form.herokuapp.com/forms" method="post" class="affiliate-form" data-success-container="#success-message" data-error-container="#error-message">
+
+            <fieldset>
+              <legend>Company details</legend>
+
+              <div class="form-group">
+                <label for="company_name">Company Name</label>
+                <input name="company_name" type="text" class="form-control" id="company_name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="abn_acn">ABN/ACN</label>
+                <input name="abn_acn" type="text" class="form-control" id="abn_acn">
+              </div>
+
+              <div class="form-group">
+                <label for="address">Address</label>
+                <textarea name="address" type="text" class="form-control" id="address" rows="4"></textarea>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Primary contact</legend>
+
+              <div class="form-group">
+                <label for="primary_contact_name">Primary contact name</label>
+                <input name="primary_contact_name" type="text" class="form-control name" id="primary_contact_name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input name="primary_contact_email" type="email" class="form-control email" id="email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="telephone">Phone</label>
+                <input name="primary_contact_telephone" type="text" class="form-control telephone" id="telephone" required>
+              </div>
+            </fieldset>
+
+            <div class="removable-target">
+              <fieldset class="removable">
+                <legend>
+                  Auditor 1&nbsp;<a href="" class="delete-auditor">Delete</a>
+                </legend>
+
+                <div class="form-group">
+                  <label for="auditor_1_name">Auditor name</label>
+                  <input name="auditor_1_name" type="text" class="form-control name" id="auditor_1_name">
+                </div>
+
+                <div class="form-group">
+                  <label for="auditor_1_email">Email</label>
+                  <input name="auditor_1_email" type="email" class="form-control email" id="auditor_1_email">
+                </div>
+
+                <div class="form-group">
+                  <label for="auditor_1_telephone">Phone</label>
+                  <input name="auditor_1_telephone" type="text" class="form-control telephone" id="auditor_1_telephone">
+                </div>
+              </fieldset>
             </div>
 
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input name="email" type="email" class="form-control" id="email" required>
-            </div>
 
-            <div class="form-group">
-              <label for="telephone">Phone</label>
-              <input name="telephone" type="text" class="form-control" id="telephone">
-            </div>
-
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea name="message" class="form-control" id="message" rows="4"></textarea>
-            </div>
             <input type="hidden" name="utf8" value="✓">
             <div class="form-actions">
+              <p>
+                <a href="#" class="add-auditor">
+                  + Add another auditor
+                </a>
+              </p>
+
               <button type="submit" class="btn btn-primary">
                 Send message
               </button>
             </div>
           </form>
 
-          <div class="not-the-contact-form hidden" id="contact-message-success">
-            <p><strong>Your message has been submitted.</strong></p>
-            <p>
-              Thank you for contacting us. We will get back to you shortly.
-            </p>
-          </div>
-
-          <div class="not-the-contact-form hidden" id="contact-message-error">
+          <div class="not-the-contact-form hidden" id="error-message">
             <p><strong class="text-danger">Form submission failed.</strong></p>
             <p>
               <strong>We’re sorry, the form could not be submitted due to a techincal issue.</strong>
@@ -124,42 +167,14 @@
             </p>
           </div>
         </div>
+      </div>
 
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <p class="contact-title">
-            Email
-          </p>
-
+      <div class="row hidden" id="success-message">
+        <div class="col-xs-12">
           <p>
-            info@lupinsys.com
-          </p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <p class="contact-title">
-            Australia
-          </p>
-
-          <p>
-            +61 (0) 419 516 828
-          </p>
-          <p>
-            PO Box 3015
-            <br />
-            Dendy VIC 3186
-          </p>
-
-          <p class="contact-title">
-            United Kingdom
-          </p>
-
-          <p>
-            +44 (0) 845 868 6870
-          </p>
-
-          <p>
-            10-14 Accommodation Road
-            <br />
-            London NW11 8ED
+            <strong>
+              Thank you for registering. We will get back to you shortly.
+            </strong>
           </p>
         </div>
       </div>

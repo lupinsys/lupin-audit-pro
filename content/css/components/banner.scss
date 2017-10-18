@@ -46,3 +46,16 @@
   font-weight: 600;
   font-size: 1em;
 }
+
+.banner__secondary-cta {
+  font-weight: 600;
+  font-size: 1em;
+  background: transparent;
+  text-decoration: underline;
+  color: #fff !important;
+  padding: 0.7em 1.1em !important;
+  white-space: inherit;
+  letter-spacing: 0.25px;
+  text-decoration-skip: ink;
+  margin-left: 10px;
+}

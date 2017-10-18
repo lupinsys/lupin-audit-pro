@@ -14,6 +14,23 @@
     padding: 0.7em 0.7em !important;
     letter-spacing: 0.28px;
   }
+
+  .banner__secondary-cta {
+    margin-top: 14px;
+    padding: 0.7em 0.7em !important;
+
+    @media (min-width: 992px) and (max-width: 1325px) {
+      margin-right: 50px;
+      padding-left: 0 !important;
+      margin-left: 0;
+    }
+
+    @media (max-width: 475px) {
+      margin-right: 50px;
+      padding-left: 0 !important;
+      margin-left: 0;
+    }
+  }
 }
 
 .content-banner__image {
