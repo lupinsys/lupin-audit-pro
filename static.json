@@ -1,5 +1,5 @@
 {
   "root": "docs/",
   "clean_urls": true,
-  "error_page": "docs/404/index.html"
+  "error_page": "/404/index.html"
 }
